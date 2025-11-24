@@ -1,6 +1,3 @@
-// ========================================
-// FILE: lib/screens/photo_detail_screen.dart
-// ========================================
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -10,11 +7,8 @@ class PhotoDetailScreen extends StatelessWidget {
   final Map<String, dynamic> data;
   final String docId;
 
-  const PhotoDetailScreen({
-    Key? key,
-    required this.data,
-    required this.docId,
-  }) : super(key: key);
+  const PhotoDetailScreen({Key? key, required this.data, required this.docId})
+    : super(key: key);
 
   String _formatDate(dynamic timestamp) {
     if (timestamp == null) return 'Baru saja';
@@ -89,10 +83,7 @@ class PhotoDetailScreen extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
-                    colors: [
-                      Colors.black.withOpacity(0.8),
-                      Colors.transparent,
-                    ],
+                    colors: [Colors.black.withOpacity(0.8), Colors.transparent],
                   ),
                 ),
                 child: Row(

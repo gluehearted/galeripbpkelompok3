@@ -1,6 +1,3 @@
-// ========================================
-// FILE: lib/services/image_service.dart
-// ========================================
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
@@ -21,7 +18,7 @@ class ImageService {
 
       // Convert to base64
       final base64Image = base64Encode(compressedBytes);
-      
+
       // Check size
       final sizeInKB = (base64Image.length * 3) / 4 / 1024;
 
@@ -29,7 +26,8 @@ class ImageService {
 
       if (sizeInKB > 900) {
         throw Exception(
-            'Gambar terlalu besar (${sizeInKB.toStringAsFixed(0)} KB). Pilih gambar lebih kecil.');
+          'Gambar terlalu besar (${sizeInKB.toStringAsFixed(0)} KB). Pilih gambar lebih kecil.',
+        );
       }
 
       return 'data:image/jpeg;base64,$base64Image';

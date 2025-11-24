@@ -1,6 +1,3 @@
-// ========================================
-// FILE: lib/widgets/photo_grid_item.dart
-// ========================================
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
@@ -44,10 +41,7 @@ class PhotoGridItem extends StatelessWidget {
                   errorBuilder: (context, error, stackTrace) {
                     return Container(
                       color: Colors.grey[300],
-                      child: const Icon(
-                        Icons.error,
-                        color: Colors.red,
-                      ),
+                      child: const Icon(Icons.error, color: Colors.red),
                     );
                   },
                 ),
