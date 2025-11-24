@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768387241814",
+    "project_id": "camerapbp",
+    "storage_bucket": "camerapbp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768387241814:android:40a4682072a5bcd22128f7",
+        "android_client_info": {
+          "package_name": "com.pbp.camera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyorWMStOwXTwVeN8wD5JrrfIl6b4_oz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
